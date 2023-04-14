@@ -1,0 +1,48 @@
+:root {
+  --border: 2px solid #f6dede;
+  --primary-font: "Shadows Into Light", cursive;
+  --primary-color: radial-gradient(
+    circle at 10% 20%,
+    rgb(248, 219, 219) 0%,
+    rgb(229, 248, 250) 90%
+  );
+  --box-shadow: 5px 5px 10px #f6dede;
+}
+body {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: x-large;
+  background-color: aliceblue;
+}
+#center {
+  border: var(--border);
+  background: var(--primary-color);
+  border-radius: 8px;
+  max-width: 50%;
+  margin: 30px auto;
+  padding: 40px 20px;
+}
+#links {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  border: var(--border);
+  color: black;
+  background-color: #f6dede;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  flex: 1;
+}
+a:hover {
+  background-color: #e5f8fa;
+  box-shadow: var(--box-shadow);
+}
+a:visited {
+  background-color: #e5f8fa;
+  box-shadow: var(--box-shadow);
+}
+.aboutPageHeader {
+  margin-top: 0;
+}
